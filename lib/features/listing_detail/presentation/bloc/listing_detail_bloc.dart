@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:bloc_concurrency/bloc_concurrency.dart';
-import 'package:funda_listing/features/listing_detail/domain/failures/listing_failures.dart';
-import 'package:funda_listing/features/listing_detail/domain/repositories/listing_repository.dart';
 
+import '../../domain/failures/listing_failures.dart';
+import '../../domain/repositories/listing_repository.dart';
 import 'listing_detail_event.dart';
 import 'listing_detail_state.dart';
 

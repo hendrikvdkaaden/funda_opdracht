@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/agent_card.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/description_section.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/key_facts.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/listing_header.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/location_map.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/photo_carousel.dart';
 
 import '../../domain/entities/listing.dart';
+import 'agent_card.dart';
+import 'description_section.dart';
+import 'key_facts.dart';
+import 'listing_header.dart';
+import 'location_map.dart';
+import 'photo_carousel.dart';
 
 class ListingDetailView extends StatelessWidget {
   const ListingDetailView({super.key, required this.listing});
@@ -24,14 +24,14 @@ class ListingDetailView extends StatelessWidget {
         if (listing.photoUrls.isNotEmpty)
           PhotoCarousel(urls: listing.photoUrls),
         Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.fromLTRB(16, 24, 16, 24),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ListingHeader(listing: listing),
               const SizedBox(height: 24),
               KeyFacts(listing: listing),
-              if (description != null && description.isNotEmpty) ...[
+              if (description != null) ...[
                 const SizedBox(height: 24),
                 DescriptionSection(description: description),
               ],

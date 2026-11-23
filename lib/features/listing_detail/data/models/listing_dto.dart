@@ -74,7 +74,8 @@ class ListingDto {
     );
   }
 
-  /// Zet de ruwe API-data om naar het domain-model.
+  /// Zet de ruwe API-data om naar het domain-model. Lege strings worden
+  /// hier `null`, zodat de UI alleen nog op `null` hoeft te checken.
   Listing toDomain() {
     final lat = latitude;
     final lng = longitude;
@@ -82,19 +83,19 @@ class ListingDto {
 
     return Listing(
       id: id,
-      address: address,
-      postalCode: postalCode,
-      city: city,
+      address: _nonEmpty(address),
+      postalCode: _nonEmpty(postalCode),
+      city: _nonEmpty(city),
       price: price,
-      priceSuffix: priceSuffix,
+      priceSuffix: _nonEmpty(priceSuffix),
       livingArea: livingArea,
       plotArea: plotArea,
       rooms: rooms,
       bedrooms: bedrooms,
       bathrooms: bathrooms,
-      buildYear: buildYear,
-      energyLabel: energyLabel,
-      description: description,
+      buildYear: _nonEmpty(buildYear),
+      energyLabel: _nonEmpty(energyLabel),
+      description: _nonEmpty(description),
       photoUrls: photoUrls,
       // Een locatie heeft alleen zin met beide coördinaten.
       location: (lat != null && lng != null)

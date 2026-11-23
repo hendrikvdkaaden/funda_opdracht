@@ -81,8 +81,41 @@ class AppLocalizationsEn extends AppLocalizations {
   String get agentTitle => 'Agent';
 
   @override
-  String get callAgent => 'Call';
+  String get callAgent => 'Call agent';
 
   @override
   String get callFailed => 'Calling isn\'t possible on this device.';
+
+  @override
+  String get askingPrice => 'Asking price';
+
+  @override
+  String get pricePerM2 => 'Price per m²';
+
+  @override
+  String pricePerM2Value(String price) {
+    return '$price / m²';
+  }
+
+  @override
+  String bedroomsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bedrooms',
+      one: '1 bedroom',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bathroomsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count bathrooms',
+      one: '1 bathroom',
+    );
+    return '$_temp0';
+  }
 }

@@ -10,8 +10,12 @@
   "@photoLabel": {
     "description": "Screenreader-label voor een foto in de carousel.",
     "placeholders": {
-      "index": { "type": "int" },
-      "total": { "type": "int" }
+      "index": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
     }
   },
 
@@ -120,13 +124,53 @@
     "description": "Kop boven de kaart met de makelaar."
   },
 
-  "callAgent": "Bellen",
+  "callAgent": "Bel makelaar",
   "@callAgent": {
-    "description": "Knop om de makelaar te bellen."
+    "description": "Knop om de makelaar te bellen, op de makelaarskaart en in de balk onderin."
   },
 
   "callFailed": "Bellen is niet mogelijk op dit apparaat.",
   "@callFailed": {
     "description": "Melding als de telefoon-app niet geopend kan worden, bijv. op een simulator."
+  },
+
+  "askingPrice": "Vraagprijs",
+  "@askingPrice": {
+    "description": "Label boven de vraagprijs."
+  },
+
+  "pricePerM2": "Prijs per m²",
+  "@pricePerM2": {
+    "description": "Label boven de prijs per vierkante meter woonoppervlakte."
+  },
+
+  "pricePerM2Value": "{price} / m²",
+  "@pricePerM2Value": {
+    "description": "Prijs per m², bijv. \"€ 11.579 / m²\".",
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+
+  "bedroomsCount": "{count, plural, =1{1 slaapkamer} other{{count} slaapkamers}}",
+  "@bedroomsCount": {
+    "description": "Aantal slaapkamers onder het aantal kamers.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+
+  "bathroomsCount": "{count, plural, =1{1 badkamer} other{{count} badkamers}}",
+  "@bathroomsCount": {
+    "description": "Aantal badkamers onder het aantal kamers.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
   }
 }

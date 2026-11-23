@@ -15,25 +15,24 @@ class LocationMap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final theme = Theme.of(context);
+    final colorScheme = theme.colorScheme;
     // Pas hier omzetten naar LatLng: de domain-laag kent latlong2 niet.
     final point = LatLng(location.latitude, location.longitude);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          l10n.locationTitle,
-          style: Theme.of(context).textTheme.titleMedium,
-        ),
-        const SizedBox(height: 12),
+        Text(l10n.locationTitle, style: theme.textTheme.titleMedium),
+        const SizedBox(height: 8),
         Semantics(
           button: true,
           label: l10n.openInMaps,
           onTap: () => _openInMaps(context),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(12),
+            borderRadius: BorderRadius.circular(16),
             child: SizedBox(
-              height: 200,
+              height: 224,
               child: FlutterMap(
                 options: MapOptions(
                   initialCenter: point,
@@ -59,12 +58,19 @@ class LocationMap extends StatelessWidget {
                         point: point,
                         width: 40,
                         height: 40,
-                        // De punt van de pin staat op de locatie.
-                        alignment: Alignment.topCenter,
-                        child: Icon(
-                          Icons.location_on,
-                          size: 40,
-                          color: Theme.of(context).colorScheme.primary,
+                        child: DecoratedBox(
+                          decoration: BoxDecoration(
+                            color: colorScheme.surface.withValues(alpha: 0.9),
+                            shape: BoxShape.circle,
+                            boxShadow: const [
+                              BoxShadow(color: Colors.black38, blurRadius: 12),
+                            ],
+                          ),
+                          child: Icon(
+                            Icons.home_rounded,
+                            size: 24,
+                            color: colorScheme.primaryContainer,
+                          ),
                         ),
                       ),
                     ],

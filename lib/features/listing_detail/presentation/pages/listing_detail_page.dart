@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:funda_listing/features/listing_detail/domain/repositories/listing_repository.dart';
-import 'package:funda_listing/features/listing_detail/presentation/bloc/listing_detail_bloc.dart';
-import 'package:funda_listing/features/listing_detail/presentation/bloc/listing_detail_state.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/listing_detail_view.dart';
-import 'package:funda_listing/features/listing_detail/presentation/widgets/listing_error_view.dart';
-import 'package:funda_listing/l10n/app_localizations.dart';
 
+import '../../../../l10n/app_localizations.dart';
+import '../../domain/repositories/listing_repository.dart';
+import '../bloc/listing_detail_bloc.dart';
 import '../bloc/listing_detail_event.dart';
+import '../bloc/listing_detail_state.dart';
+import '../widgets/listing_detail_view.dart';
+import '../widgets/listing_error_view.dart';
+import '../widgets/price_call_bar.dart';
 
 class ListingDetailPage extends StatelessWidget {
   const ListingDetailPage({
@@ -29,13 +30,14 @@ class ListingDetailPage extends StatelessWidget {
         appBar: AppBar(
           title: Text(AppLocalizations.of(context).listingDetailTitle),
         ),
+        // Alleen de delen die van de state afhangen worden opnieuw gebouwd.
         body: BlocBuilder<ListingDetailBloc, ListingDetailState>(
           builder: (context, state) => switch (state) {
             ListingDetailLoading() => const Center(
               child: CircularProgressIndicator(),
             ),
-            ListingDetailLoaded(:final listing) => Center(
-              child: ListingDetailView(listing: listing),
+            ListingDetailLoaded(:final listing) => ListingDetailView(
+              listing: listing,
             ),
             ListingDetailError(:final failure) => Center(
               child: ListingErrorView(
@@ -45,6 +47,14 @@ class ListingDetailPage extends StatelessWidget {
                 ),
               ),
             ),
+          },
+        ),
+        bottomNavigationBar: BlocBuilder<ListingDetailBloc, ListingDetailState>(
+          builder: (context, state) => switch (state) {
+            ListingDetailLoaded(:final listing) => PriceCallBar(
+              listing: listing,
+            ),
+            _ => const SizedBox.shrink(),
           },
         ),
       ),

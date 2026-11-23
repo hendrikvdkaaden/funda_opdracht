@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:funda_listing/features/listing_detail/domain/failures/listing_failures.dart';
 
 import '../../domain/entities/listing.dart';
+import '../../domain/failures/listing_failures.dart';
 
 sealed class ListingDetailState extends Equatable {
   const ListingDetailState();

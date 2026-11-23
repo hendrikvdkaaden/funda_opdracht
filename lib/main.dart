@@ -1,13 +1,13 @@
-// lib/main.dart
 import 'package:flutter/material.dart';
-import 'package:funda_listing/l10n/app_localizations.dart';
-import 'package:funda_listing/core/app_config.dart';
 import 'package:http/http.dart' as http;
 
+import 'core/app_config.dart';
+import 'core/app_theme.dart';
 import 'features/listing_detail/data/datasources/listing_remote_data_source.dart';
-import 'features/listing_detail/domain/repositories/listing_repository.dart';
 import 'features/listing_detail/data/repositories/listing_repository_impl.dart';
+import 'features/listing_detail/domain/repositories/listing_repository.dart';
 import 'features/listing_detail/presentation/pages/listing_detail_page.dart';
+import 'l10n/app_localizations.dart';
 
 /// De woning die standaard getoond wordt. Te overschrijven met
 /// `--dart-define=LISTING_ID=<id>`.
@@ -41,10 +41,8 @@ class FundaApp extends StatelessWidget {
       title: 'Funda',
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      theme: ThemeData(
-        colorSchemeSeed: const Color(0xFFF7A100), // Funda-oranje
-        useMaterial3: true,
-      ),
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
       home: ListingDetailPage(
         listingId: _listingId,
         listingRepository: listingRepository,

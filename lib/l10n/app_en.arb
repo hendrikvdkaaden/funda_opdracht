@@ -23,6 +23,11 @@
   "openInMaps": "Open in maps app",
   "openInMapsFailed": "Couldn't open the maps app.",
   "agentTitle": "Agent",
-  "callAgent": "Call",
-  "callFailed": "Calling isn't possible on this device."
+  "callAgent": "Call agent",
+  "callFailed": "Calling isn't possible on this device.",
+  "askingPrice": "Asking price",
+  "pricePerM2": "Price per m²",
+  "pricePerM2Value": "{price} / m²",
+  "bedroomsCount": "{count, plural, =1{1 bedroom} other{{count} bedrooms}}",
+  "bathroomsCount": "{count, plural, =1{1 bathroom} other{{count} bathrooms}}"
 }

@@ -81,8 +81,41 @@ class AppLocalizationsNl extends AppLocalizations {
   String get agentTitle => 'Makelaar';
 
   @override
-  String get callAgent => 'Bellen';
+  String get callAgent => 'Bel makelaar';
 
   @override
   String get callFailed => 'Bellen is niet mogelijk op dit apparaat.';
+
+  @override
+  String get askingPrice => 'Vraagprijs';
+
+  @override
+  String get pricePerM2 => 'Prijs per m²';
+
+  @override
+  String pricePerM2Value(String price) {
+    return '$price / m²';
+  }
+
+  @override
+  String bedroomsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count slaapkamers',
+      one: '1 slaapkamer',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String bathroomsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count badkamers',
+      one: '1 badkamer',
+    );
+    return '$_temp0';
+  }
 }

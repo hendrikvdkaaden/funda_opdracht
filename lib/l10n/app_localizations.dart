@@ -236,10 +236,10 @@ abstract class AppLocalizations {
   /// **'Makelaar'**
   String get agentTitle;
 
-  /// Knop om de makelaar te bellen.
+  /// Knop om de makelaar te bellen, op de makelaarskaart en in de balk onderin.
   ///
   /// In nl, this message translates to:
-  /// **'Bellen'**
+  /// **'Bel makelaar'**
   String get callAgent;
 
   /// Melding als de telefoon-app niet geopend kan worden, bijv. op een simulator.
@@ -247,6 +247,36 @@ abstract class AppLocalizations {
   /// In nl, this message translates to:
   /// **'Bellen is niet mogelijk op dit apparaat.'**
   String get callFailed;
+
+  /// Label boven de vraagprijs.
+  ///
+  /// In nl, this message translates to:
+  /// **'Vraagprijs'**
+  String get askingPrice;
+
+  /// Label boven de prijs per vierkante meter woonoppervlakte.
+  ///
+  /// In nl, this message translates to:
+  /// **'Prijs per m²'**
+  String get pricePerM2;
+
+  /// Prijs per m², bijv. "€ 11.579 / m²".
+  ///
+  /// In nl, this message translates to:
+  /// **'{price} / m²'**
+  String pricePerM2Value(String price);
+
+  /// Aantal slaapkamers onder het aantal kamers.
+  ///
+  /// In nl, this message translates to:
+  /// **'{count, plural, =1{1 slaapkamer} other{{count} slaapkamers}}'**
+  String bedroomsCount(int count);
+
+  /// Aantal badkamers onder het aantal kamers.
+  ///
+  /// In nl, this message translates to:
+  /// **'{count, plural, =1{1 badkamer} other{{count} badkamers}}'**
+  String bathroomsCount(int count);
 }
 
 class _AppLocalizationsDelegate

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../l10n/app_localizations.dart';
 import '../../domain/entities/agent.dart';
+import 'section_card.dart';
 
 class AgentCard extends StatelessWidget {
   const AgentCard({super.key, required this.agent});
@@ -13,66 +12,87 @@ class AgentCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
+    final theme = Theme.of(context);
+    final textTheme = theme.textTheme;
+    final colorScheme = theme.colorScheme;
     final phone = agent.phone;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(l10n.agentTitle, style: textTheme.titleMedium),
-        const SizedBox(height: 12),
-        Card.outlined(
-          margin: EdgeInsets.zero,
-          child: Padding(
-            padding: const EdgeInsets.all(16),
-            child: Row(
-              children: [
-                const CircleAvatar(child: Icon(Icons.business_outlined)),
-                const SizedBox(width: 16),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(agent.name, style: textTheme.titleSmall),
-                      if (phone != null)
-                        Text(phone, style: textTheme.bodyMedium),
-                    ],
+        const SizedBox(height: 8),
+        SectionCard(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Row(
+                children: [
+                  ExcludeSemantics(
+                    child: Container(
+                      width: 48,
+                      height: 48,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: colorScheme.surfaceContainerHighest,
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                      child: Text(
+                        _monogram(agent.name),
+                        style: textTheme.titleSmall?.copyWith(
+                          color: colorScheme.primary,
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-                // Zonder telefoonnummer valt er niets te bellen.
-                if (phone != null) ...[
-                  const SizedBox(width: 8),
-                  FilledButton.icon(
-                    onPressed: () => _call(context, phone),
-                    icon: const Icon(Icons.phone),
-                    label: Text(l10n.callAgent),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      agent.name,
+                      style: textTheme.titleMedium?.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
                   ),
                 ],
+              ),
+              // Bellen kan via de balk onderin; hier alleen het nummer.
+              if (phone != null) ...[
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.call_outlined,
+                      size: 16,
+                      color: colorScheme.onSurfaceVariant,
+                    ),
+                    const SizedBox(width: 4),
+                    Text(
+                      phone,
+                      style: textTheme.labelMedium?.copyWith(
+                        color: colorScheme.onSurfaceVariant,
+                      ),
+                    ),
+                  ],
+                ),
               ],
-            ),
+            ],
           ),
         ),
       ],
     );
   }
 
-  Future<void> _call(BuildContext context, String phone) async {
-    // "020-1805189" → "0201805189": een tel:-URI mag alleen cijfers en +.
-    final uri = Uri(
-      scheme: 'tel',
-      path: phone.replaceAll(RegExp(r'[^0-9+]'), ''),
+  /// "DAMSTAD" → "DAM". Lange namen passen niet in de tegel.
+  static String _monogram(String name) {
+    // Unicode-letters, zodat "Één" niet "N" wordt; characters knipt geen
+    // emoji of accent doormidden.
+    final letters = name.replaceAll(
+      RegExp(r'[^\p{L}\p{N}]', unicode: true),
+      '',
     );
-    // Geeft false terug als er niet gebeld kan worden
-    var opened = false;
-    try {
-      opened = await launchUrl(uri);
-    } on PlatformException {
-      // Bijv. geen app beschikbaar die tel:-links kan openen.
-    }
-    if (!opened && context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(AppLocalizations.of(context).callFailed)),
-      );
-    }
+    final source = letters.isEmpty ? name : letters;
+    return source.characters.take(3).toString().toUpperCase();
   }
 }

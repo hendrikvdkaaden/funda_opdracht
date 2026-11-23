@@ -26,6 +26,7 @@ De feature is opgezet als zelfstandige module met Clean Architecture-lagen:
 ```
 lib/
   core/app_config.dart         → API-key en base-URL via --dart-define
+  core/app_theme.dart          → licht en donker thema (kleuren uit het design)
   l10n/                        → vertalingen (ARB, Nederlands en Engels)
   features/listing_detail/
     domain/                    → Listing-entity, repository-interface, failures
@@ -82,22 +83,27 @@ lib/
 | Data source | URL-opbouw, statuscodes, UTF-8 zonder Content-Type-header, timeout (met `MockClient`) |
 | Repository | Elke exception → de juiste `ListingFailure` |
 | Bloc | Succes, fout, en dat `restartable()` een oud antwoord negeert |
-| Widget | `ListingErrorView` met en zonder retry-knop |
+| Widget | `ListingErrorView` met en zonder retry-knop; `ListingDetailView` (adres, prijs, prijs per m², kenmerken, makelaar) en `PriceCallBar` zonder telefoonnummer |
 
 - De mocks laten de data source falen met `Future.error` en niet met `thenThrow`. De echte data source faalt asynchroon, dus zo vangt de test ook een vergeten `await` in de repository.
 - Belangrijke tests zijn gecontroleerd met mutaties: een bug inbouwen en controleren dat de test rood wordt. De restartable-test faalt bijvoorbeeld zonder de transformer.
 
 ## Gebruik van AI
- 
-Ik heb Claude (Anthropic) gebruikt als sparringpartner en reviewer. Ik heb de app stap voor stap zelf opgebouwd en na elke stap mijn code laten reviewen.
-## **Waarvoor ik AI heb gebruikt:**
-- **Analyse van de API-response.** Samen de JSON doorgelopen. Daarbij kwamen o.a. de X/Y-coördinaten, de `http`-foto-URL's en de mediacategorieën naar voren.
-- **Opzet van de architectuur.** Advies over de laagindeling en de keuze van packages.
-- **Code review.** Feedback op mijn eerste versies met uitleg over fouten, bijvoorbeeld: `fromJson` hoorde niet in de entity, en mijn state-klasse `Error` botste met `dart:core`.
-- **Gecorrigeerde versies van een deel van de data-laag.** De DTO-mapping, de data source, de foutvertaling in de repository en de `ListingErrorView` zijn herschreven op basis van mijn eerste versies en de feedback daarop.
-- **Teststrategie.** Een plan per laag en een voorbeeldtest per type, die ik daarna heb uitgebreid.
-- **Structuur van deze README.**
-**Wat ik zelf heb geschreven:** de overige UI-widgets (header, fotocarousel, kenmerken, omschrijving, kaart, makelaarskaart), de localisatie en het grootste deel van de tests.
- 
-**Hoe ik ermee ben omgegaan:** ik heb alle code zelf ingevoerd, gedraaid en getest, en ik kan elke regel uitleggen. AI zat er ook weleens naast. Zo werd gezegd dat `required this._client` niet zou compileren, terwijl mijn analyzer liet zien dat recente Dart-versies private named parameters ondersteunen. Ik heb AI-output daarom altijd gecontroleerd tegen de compiler, de documentatie en de tests.
- 
+
+Ik heb deze opdracht gemaakt met Claude (Anthropic), op twee manieren.
+
+**1. Als mentor en reviewer (chat).** Ik heb de eerste versies van de entity, de DTO, de data source, de repository, de bloc met events en states, de page en `main.dart` zelf geschreven. Claude reviewde ze en legde uit wat er mis was, bijvoorbeeld:
+- `fromJson` hoorde niet in de entity.
+- Mijn state-klasse `Error` botste met `dart:core`.
+  
+Waar ik vastliep, kreeg ik een gecorrigeerde versie die ik heb overgenomen. Dat geldt voor de DTO-mapping, de data source, de foutvertaling in de repository en de `ListingErrorView`. Ook de analyse van de API-response, de keuze van packages en de teststrategie heb ik in dit gesprek uitgewerkt.
+
+**2. Als codeschrijver (Claude Code).** Per stap gaf ik aan wat er moest komen en welke eisen erbij hoorden. Claude schreef daarop de code:
+- de UI-widgets (header, carousel, kenmerken, omschrijving, kaart, makelaarskaart);
+- de localisatie;
+- de platformconfiguratie;
+- de UTF-8-fix en de opschoning van lege strings;
+- de tests.
+  Ik heb die code gereviewd, bijgestuurd en me elk onderdeel laten uitleggen, tot ik het zelf kon verdedigen.
+
+**Controle.** AI zat er ook weleens naast. Zo werd gezegd dat `required this._client` niet zou compileren, terwijl mijn analyzer liet zien dat recente Dart-versies private named parameters ondersteunen. Ik heb AI-output daarom gecontroleerd tegen de compiler, de echte API en de tests. Ook de tests zelf heb ik met mutaties gecontroleerd.

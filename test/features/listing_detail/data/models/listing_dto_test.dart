@@ -164,6 +164,27 @@ void main() {
       });
     });
 
+    test('maakt lege of alleen-spaties strings null', () {
+      json
+        ..['Adres'] = ''
+        ..['Postcode'] = ' '
+        ..['Plaats'] = ''
+        ..['Bouwjaar'] = ''
+        ..['VolledigeOmschrijving'] = '  '
+        ..['Energielabel'] = {'Label': ''};
+      (json['Prijs'] as Map<String, dynamic>)['KoopAbbreviation'] = '';
+
+      final listing = ListingDto.fromJson(json).toDomain();
+
+      expect(listing.address, isNull);
+      expect(listing.postalCode, isNull);
+      expect(listing.city, isNull);
+      expect(listing.buildYear, isNull);
+      expect(listing.description, isNull);
+      expect(listing.energyLabel, isNull);
+      expect(listing.priceSuffix, isNull);
+    });
+
     group('makelaar', () {
       test('maakt een makelaar met naam en telefoonnummer', () {
         final listing = ListingDto.fromJson(json).toDomain();
