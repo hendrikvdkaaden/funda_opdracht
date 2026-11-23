@@ -52,7 +52,6 @@ class _PhotoCarouselState extends State<PhotoCarousel> {
               );
             },
           ),
-          // Vignet, zodat de teller op elke foto leesbaar is.
           IgnorePointer(
             child: DecoratedBox(
               decoration: BoxDecoration(

@@ -109,7 +109,8 @@ class ListingDto {
 
   /// Haalt de foto-URL's uit de `Media`-lijst.
   ///
-  /// Pak alleen Categorie 1 + hoogste breedte
+  /// Alleen Categorie 1 (foto's); per foto het formaat met de grootste
+  /// breedte.
   static List<String> _parsePhotoUrls(Object? media) {
     if (media is! List) return const [];
 

@@ -7,8 +7,8 @@ import 'package:funda_listing/features/listing_detail/presentation/widgets/price
 import 'package:funda_listing/l10n/app_localizations.dart';
 
 void main() {
-  // Zonder foto's en locatie: die laden van het netwerk, en dat kan niet in
-  // een widget-test.
+  // Zonder foto's en locatie: die laden van het netwerk, en in een
+  // widget-test krijgt elk HTTP-verzoek een 400 terug.
   const listing = Listing(
     id: '9ddd5cc7-fabd-420a-abb0-3bb447cb169e',
     address: 'Amstelveenseweg 182-3',

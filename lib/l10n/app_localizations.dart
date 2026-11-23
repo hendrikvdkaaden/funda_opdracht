@@ -236,7 +236,7 @@ abstract class AppLocalizations {
   /// **'Makelaar'**
   String get agentTitle;
 
-  /// Knop om de makelaar te bellen, op de makelaarskaart en in de balk onderin.
+  /// Knop in de balk onderin om de makelaar te bellen.
   ///
   /// In nl, this message translates to:
   /// **'Bel makelaar'**

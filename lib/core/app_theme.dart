@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
 
-/// Thema's op basis van het Stitch-design. Widgets gebruiken alleen
-/// [ColorScheme]-rollen, zodat licht en donker allebei werken.
 abstract final class AppTheme {
-  /// Funda-oranje: vlakken als de prijs en de belknop.
   static const _fundaOrange = Color(0xFFFF9900);
 
   static final ThemeData light = _build(
     ColorScheme.fromSeed(seedColor: _fundaOrange).copyWith(
+      surface: const Color(0xFFFFF8F5),
+      onSurface: const Color(0xFF211A14),
+      onSurfaceVariant: const Color(0xFF51453A),
+      surfaceContainerLowest: const Color(0xFFFFFFFF),
+      surfaceContainerLow: const Color(0xFFFFF1E7),
+      surfaceContainer: const Color(0xFFFAEBE0),
+      surfaceContainerHigh: const Color(0xFFF4E6DB),
+      surfaceContainerHighest: const Color(0xFFEFE0D5),
+      primary: const Color(0xFF855318),
+      onPrimary: const Color(0xFFFFFFFF),
       primaryContainer: _fundaOrange,
       onPrimaryContainer: const Color(0xFF4A2800),
+      secondary: const Color(0xFF725A42),
+      tertiary: const Color(0xFF58633A),
+      outlineVariant: const Color(0xFFD5C3B5),
     ),
   );
 
-  /// De kleuren komen één-op-één uit het design.
   static final ThemeData dark = _build(
     ColorScheme.fromSeed(
       seedColor: _fundaOrange,

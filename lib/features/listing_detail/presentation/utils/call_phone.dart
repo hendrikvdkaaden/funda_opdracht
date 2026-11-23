@@ -6,12 +6,13 @@ import '../../../../l10n/app_localizations.dart';
 
 /// Opent de telefoon-app met [phone]. Lukt dat niet, dan volgt een SnackBar.
 Future<void> callPhone(BuildContext context, String phone) async {
-  // "020-1805189" → "0201805189": een tel:-URI mag alleen cijfers en +.
+  // "020-1805189" → "0201805189": alleen cijfers en + overhouden, zodat
+  // de telefoon-app geen scheidingstekens hoeft te interpreteren.
   final uri = Uri(
     scheme: 'tel',
     path: phone.replaceAll(RegExp(r'[^0-9+]'), ''),
   );
-  // Geeft false terug als er niet gebeld kan worden
+  // launchUrl geeft false terug als er geen app is die de URI opent.
   var opened = false;
   try {
     opened = await launchUrl(uri);

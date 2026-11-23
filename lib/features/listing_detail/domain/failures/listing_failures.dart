@@ -17,7 +17,8 @@ class NotFoundFailure extends ListingFailure {
   const NotFoundFailure();
 }
 
-/// Elke andere fout: serverfout of onverwachte data.
+/// Elke andere fout: een andere statuscode dan 200 of 404, of onverwachte
+/// data.
 class UnexpectedFailure extends ListingFailure {
   const UnexpectedFailure([this.cause]);
 

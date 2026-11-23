@@ -126,7 +126,7 @@
 
   "callAgent": "Bel makelaar",
   "@callAgent": {
-    "description": "Knop om de makelaar te bellen, op de makelaarskaart en in de balk onderin."
+    "description": "Knop in de balk onderin om de makelaar te bellen."
   },
 
   "callFailed": "Bellen is niet mogelijk op dit apparaat.",
