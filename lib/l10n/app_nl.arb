@@ -1,0 +1,132 @@
+{
+  "@@locale": "nl",
+
+  "listingDetailTitle": "Woningdetails",
+  "@listingDetailTitle": {
+    "description": "Titel in de app bar van de detailpagina."
+  },
+
+  "photoLabel": "Foto {index} van {total}",
+  "@photoLabel": {
+    "description": "Screenreader-label voor een foto in de carousel.",
+    "placeholders": {
+      "index": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+
+  "addressUnknown": "Adres onbekend",
+  "@addressUnknown": {
+    "description": "Getoond als de woning geen adres heeft."
+  },
+
+  "priceOnRequest": "Prijs op aanvraag",
+  "@priceOnRequest": {
+    "description": "Getoond als de woning geen vraagprijs heeft."
+  },
+
+  "errorNetwork": "Geen verbinding. Controleer je internet.",
+  "@errorNetwork": {
+    "description": "Foutmelding bij geen verbinding of een time-out."
+  },
+
+  "errorNotFound": "Deze woning is niet meer beschikbaar.",
+  "@errorNotFound": {
+    "description": "Foutmelding als de woning niet (meer) bestaat."
+  },
+
+  "errorUnexpected": "Er ging iets mis bij het laden.",
+  "@errorUnexpected": {
+    "description": "Foutmelding bij een onverwachte fout."
+  },
+
+  "retry": "Opnieuw proberen",
+  "@retry": {
+    "description": "Knop om het laden opnieuw te proberen."
+  },
+
+  "keyFactsTitle": "Kenmerken",
+  "@keyFactsTitle": {
+    "description": "Kop boven de kenmerken van de woning."
+  },
+
+  "livingArea": "Woonoppervlakte",
+  "@livingArea": {
+    "description": "Label voor de woonoppervlakte."
+  },
+
+  "plotArea": "Perceel",
+  "@plotArea": {
+    "description": "Label voor de perceeloppervlakte."
+  },
+
+  "rooms": "Kamers",
+  "@rooms": {
+    "description": "Label voor het aantal kamers."
+  },
+
+  "bedrooms": "Slaapkamers",
+  "@bedrooms": {
+    "description": "Label voor het aantal slaapkamers."
+  },
+
+  "bathrooms": "Badkamers",
+  "@bathrooms": {
+    "description": "Label voor het aantal badkamers."
+  },
+
+  "buildYear": "Bouwjaar",
+  "@buildYear": {
+    "description": "Label voor het bouwjaar of de bouwperiode."
+  },
+
+  "energyLabel": "Energielabel",
+  "@energyLabel": {
+    "description": "Label voor het energielabel."
+  },
+
+  "descriptionTitle": "Omschrijving",
+  "@descriptionTitle": {
+    "description": "Kop boven de omschrijving van de woning."
+  },
+
+  "readMore": "Lees meer",
+  "@readMore": {
+    "description": "Knop om de volledige omschrijving te tonen."
+  },
+
+  "readLess": "Lees minder",
+  "@readLess": {
+    "description": "Knop om de omschrijving weer in te klappen."
+  },
+
+  "locationTitle": "Locatie",
+  "@locationTitle": {
+    "description": "Kop boven de kaart met de ligging van de woning."
+  },
+
+  "openInMaps": "Open in kaart-app",
+  "@openInMaps": {
+    "description": "Screenreader-label en actie van de kaart: opent de locatie in Google Maps (Android) of Apple Kaarten (iOS)."
+  },
+
+  "openInMapsFailed": "Kon de kaart-app niet openen.",
+  "@openInMapsFailed": {
+    "description": "Melding als de kaart-app niet geopend kan worden."
+  },
+
+  "agentTitle": "Makelaar",
+  "@agentTitle": {
+    "description": "Kop boven de kaart met de makelaar."
+  },
+
+  "callAgent": "Bellen",
+  "@callAgent": {
+    "description": "Knop om de makelaar te bellen."
+  },
+
+  "callFailed": "Bellen is niet mogelijk op dit apparaat.",
+  "@callFailed": {
+    "description": "Melding als de telefoon-app niet geopend kan worden, bijv. op een simulator."
+  }
+}

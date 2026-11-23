@@ -1,0 +1,957 @@
+{
+  "AangebodenSinds": "/Date(1769036400000+0100)/",
+  "AangebodenSindsTekst": "6+ maanden",
+  "AantalBadkamers": 1,
+  "AantalKamers": 10,
+  "AantalSlaapkamers": null,
+  "AantalWoonlagen": "4 woonlagen",
+  "Aanvaarding": "In overleg",
+  "Adres": "Amstelveenseweg 182-3",
+  "AfgekochtDatum": null,
+  "BalkonDakterras": null,
+  "BedrijfsruimteCombinatieObject": null,
+  "BezichtingDagdelen": [
+    {
+      "Naam": "Geen voorkeur",
+      "Waarde": "Geen voorkeur"
+    },
+    {
+      "Naam": "'s ochtends",
+      "Waarde": "'s ochtends"
+    },
+    {
+      "Naam": "'s middags",
+      "Waarde": "'s middags"
+    },
+    {
+      "Naam": "'s avonds",
+      "Waarde": "'s avonds"
+    }
+  ],
+  "BezichtingDagen": [
+    {
+      "Naam": "Geen voorkeur",
+      "Waarde": "Geen voorkeur"
+    },
+    {
+      "Naam": "Alleen werkdagen",
+      "Waarde": "Alleen werkdagen"
+    },
+    {
+      "Naam": "Weekend",
+      "Waarde": "Weekend"
+    },
+    {
+      "Naam": "Maandag",
+      "Waarde": "Maandag"
+    },
+    {
+      "Naam": "Dinsdag",
+      "Waarde": "Dinsdag"
+    },
+    {
+      "Naam": "Woensdag",
+      "Waarde": "Woensdag"
+    },
+    {
+      "Naam": "Donderdag",
+      "Waarde": "Donderdag"
+    },
+    {
+      "Naam": "Vrijdag",
+      "Waarde": "Vrijdag"
+    },
+    {
+      "Naam": "Zaterdag",
+      "Waarde": "Zaterdag"
+    }
+  ],
+  "BijdrageVVE": null,
+  "Bijzonderheden": "monumentaal pand",
+  "Bouwjaar": "1930",
+  "Bouwvorm": "bestaande bouw",
+  "BronCode": "NVM",
+  "Cv": "Intergas (gas gestookt combiketel uit 2019, Eigendom)",
+  "DatumOndertekeningAkte": null,
+  "Deeplink": null,
+  "DetailInfo": {
+    "HasPromotionLabel": false,
+    "PromotionLabelType": 0,
+    "RibbonColor": 0,
+    "RibbonText": null,
+    "Tagline": null
+  },
+  "EigendomsSituatie": null,
+  "Energielabel": {
+    "Definitief": true,
+    "Index": null,
+    "Label": "E",
+    "NietBeschikbaar": false,
+    "NietVerplicht": false
+  },
+  "ErfpachtBedrag": null,
+  "Garage": null,
+  "GarageIsolatie": null,
+  "GarageVoorzieningen": null,
+  "GelegenOp": null,
+  "GewijzigdDatum": "/Date(1769036400000+0100)/",
+  "HoofdFoto": "http://cloud.funda.nl/valentina_media/223/522/328_groot.jpg",
+  "HoofdFotoSecure": "http://cloud.funda.nl/valentina_media/223/522/328_groot.jpg",
+  "HoofdTuinType": "achtertuin",
+  "Id": 7834844,
+  "IndBasisPlaatsing": true,
+  "IndFotos": true,
+  "IndIpix": true,
+  "IndOpenhuizenTopper": false,
+  "IndPDF": true,
+  "IndPlattegrond": true,
+  "IndTop": false,
+  "IndVeilingProduct": false,
+  "IndVideo": true,
+  "Inhoud": 1266,
+  "InternalId": "9ddd5cc7-fabd-420a-abb0-3bb447cb169e",
+  "IsIngetrokken": false,
+  "IsVerhuurd": false,
+  "IsVerkocht": false,
+  "Isolatie": "<{Dubbel glas}>",
+  "Kenmerken": [
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Vraagprijs",
+          "NaamCss": null,
+          "Waarde": "<span class=\"price-wrapper\">€ 4.400.000 kosten koper</span>",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Servicekosten",
+          "NaamCss": null,
+          "Waarde": "&euro;&nbsp;0,0 /mnd",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Aangeboden sinds",
+          "NaamCss": null,
+          "Waarde": "<span title=\"langer dan 6 maanden\">6+ maanden</span>",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Status",
+          "NaamCss": null,
+          "Waarde": "Beschikbaar",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Aanvaarding",
+          "NaamCss": null,
+          "Waarde": "In overleg",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5000,
+      "SubKenmerk": null,
+      "Titel": "Overdracht"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Soort woonhuis",
+          "NaamCss": null,
+          "Waarde": "herenhuis",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Bouwvorm",
+          "NaamCss": null,
+          "Waarde": "Bestaande bouw",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Bouwjaar",
+          "NaamCss": null,
+          "Waarde": "1930",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Specifiek",
+          "NaamCss": null,
+          "Waarde": "Monumentaal pand",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Soort dak",
+          "NaamCss": null,
+          "Waarde": "schilddak bedekt met keramische dakpannen",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Keurmerken",
+          "NaamCss": null,
+          "Waarde": "Energie Prestatie Advies",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5010,
+      "SubKenmerk": null,
+      "Titel": "Bouw"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Wonen (= woonoppervlakte) ",
+          "NaamCss": "sub-cat",
+          "Waarde": "380&nbsp;m&sup2;",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Perceeloppervlakte",
+          "NaamCss": null,
+          "Waarde": "130&nbsp;m&sup2;",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Inhoud",
+          "NaamCss": null,
+          "Waarde": "1266&nbsp;m&sup3;",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5020,
+      "SubKenmerk": null,
+      "Titel": "Oppervlakten en inhoud"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Aantal kamers",
+          "NaamCss": null,
+          "Waarde": "10 kamers (9 slaapkamers)",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Aantal badkamers",
+          "NaamCss": null,
+          "Waarde": "1 badkamer en 2 aparte toiletten",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Aantal woonlagen",
+          "NaamCss": null,
+          "Waarde": "4 woonlagen",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Voorzieningen",
+          "NaamCss": null,
+          "Waarde": "Glasvezelkabel en mechanische ventilatie",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5030,
+      "SubKenmerk": null,
+      "Titel": "Indeling"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Energielabel",
+          "NaamCss": "e",
+          "Waarde": "E ",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Isolatie",
+          "NaamCss": null,
+          "Waarde": "Dubbel glas",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Verwarming",
+          "NaamCss": null,
+          "Waarde": "C.V.-ketel",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Warm water",
+          "NaamCss": null,
+          "Waarde": "C.V.-ketel",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "C.V.-ketel",
+          "NaamCss": null,
+          "Waarde": "Intergas (gas gestookt combiketel uit 2019, Eigendom)",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5040,
+      "SubKenmerk": null,
+      "Titel": "Energie"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Ligging",
+          "NaamCss": null,
+          "Waarde": "Aan rustige weg, in centrum",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Tuin",
+          "NaamCss": null,
+          "Waarde": "Achtertuin",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Ligging tuin",
+          "NaamCss": null,
+          "Waarde": "Gelegen op het noordwesten",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5060,
+      "SubKenmerk": null,
+      "Titel": "Buitenruimte"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Schuur/berging",
+          "NaamCss": null,
+          "Waarde": "Vrijstaande stenen berging",
+          "WaardeCss": null
+        },
+        {
+          "Naam": "Voorzieningen",
+          "NaamCss": null,
+          "Waarde": "Elektra",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5070,
+      "SubKenmerk": null,
+      "Titel": "Bergruimte"
+    },
+    {
+      "Ad": null,
+      "Kenmerken": [
+        {
+          "Naam": "Soort parkeergelegenheid",
+          "NaamCss": null,
+          "Waarde": "Betaald parkeren en parkeervergunningen",
+          "WaardeCss": null
+        }
+      ],
+      "LokNummer": 5090,
+      "SubKenmerk": null,
+      "Titel": "Parkeergelegenheid "
+    }
+  ],
+  "KenmerkenKort": {
+    "Ad": null,
+    "Kenmerken": [
+      {
+        "Naam": "Soort woonhuis",
+        "NaamCss": null,
+        "Waarde": "herenhuis",
+        "WaardeCss": null
+      },
+      {
+        "Naam": "Woonoppervlakte",
+        "NaamCss": null,
+        "Waarde": "380&nbsp;m&sup2;",
+        "WaardeCss": null
+      },
+      {
+        "Naam": "Aantal kamers",
+        "NaamCss": null,
+        "Waarde": "10 kamers (9 slaapkamers)",
+        "WaardeCss": null
+      },
+      {
+        "Naam": "Bijzonderheden",
+        "NaamCss": null,
+        "Waarde": "Monumentaal pand",
+        "WaardeCss": null
+      },
+      {
+        "Naam": "Inhoud",
+        "NaamCss": null,
+        "Waarde": "1266&nbsp;m&sup3;",
+        "WaardeCss": null
+      }
+    ],
+    "LokNummer": 0,
+    "SubKenmerk": null,
+    "Titel": null
+  },
+  "KenmerkenTitel": null,
+  "Ligging": "aan rustige weg, in centrum",
+  "MLIUrl": "https://www.knab.nl/hypotheken/funda/index.html?price=4400000&zip=1075MJ&hsnr=182",
+  "Makelaar": "DAMSTAD",
+  "MakelaarId": 24633,
+  "MedeAanbieders": [],
+  "Media": [
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "d22c2e34-b106-8723-a79b-906f0c5762f9",
+      "IndexNumber": 1,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/223/522/328_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/223/522/328_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/223/522/328_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/223/522/328_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/223/522/328_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/223/522/328_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/223/522/328_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/223/522/328_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "b1b493a9-6c85-eff4-3e02-1b3abd3a75de",
+      "IndexNumber": 2,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/234/788/061_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/788/061_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/234/788/061_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/788/061_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/234/788/061_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/788/061_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/234/788/061_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/788/061_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "a3e099c5-db83-aa07-f8bc-0f0ad893b8c9",
+      "IndexNumber": 3,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/234/969/109_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/969/109_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/234/969/109_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/969/109_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/234/969/109_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/969/109_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/234/969/109_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/234/969/109_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "6bd76bd2-0891-fc57-8e36-58430dfb985d",
+      "IndexNumber": 4,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/227/886/824_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/227/886/824_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/227/886/824_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/227/886/824_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/227/886/824_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/227/886/824_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/227/886/824_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/227/886/824_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "583232cb-7caf-389c-5715-45c32878dd6f",
+      "IndexNumber": 5,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/235/346/497_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/235/346/497_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/235/346/497_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/235/346/497_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/235/346/497_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/235/346/497_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/235/346/497_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/235/346/497_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "017675bd-ab30-f019-34e5-30e61424f379",
+      "IndexNumber": 6,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/233/410/474_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/410/474_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/233/410/474_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/410/474_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/233/410/474_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/410/474_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/233/410/474_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/410/474_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "d9c2debc-fc2e-dab8-d49c-101b7b86fb9e",
+      "IndexNumber": 7,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/233/131/968_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/131/968_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/233/131/968_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/131/968_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/233/131/968_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/131/968_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/233/131/968_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/131/968_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 1,
+      "ContentType": 1,
+      "Id": "f8c6730b-6d9f-22a6-69fb-4429c258abab",
+      "IndexNumber": 8,
+      "MediaItems": [
+        {
+          "Category": 1,
+          "Height": 80,
+          "Url": "http://cloud.funda.nl/valentina_media/233/785/557_klein.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/785/557_klein.jpg",
+          "Width": 121
+        },
+        {
+          "Category": 4,
+          "Height": 161,
+          "Url": "http://cloud.funda.nl/valentina_media/233/785/557_middel.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/785/557_middel.jpg",
+          "Width": 242
+        },
+        {
+          "Category": 6,
+          "Height": 386,
+          "Url": "http://cloud.funda.nl/valentina_media/233/785/557_groot.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/785/557_groot.jpg",
+          "Width": 580
+        },
+        {
+          "Category": 7,
+          "Height": 615,
+          "Url": "http://cloud.funda.nl/valentina_media/233/785/557_grotere.jpg",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/233/785/557_grotere.jpg",
+          "Width": 922
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 3
+    },
+    {
+      "Categorie": 4,
+      "ContentType": 11,
+      "Id": "2d24e19d-bb56-537b-6f0d-0e05c23648c6",
+      "IndexNumber": 1,
+      "MediaItems": [
+        {
+          "Category": 0,
+          "Height": 0,
+          "Url": "http://cloud.funda.nl/valentina_media/",
+          "UrlSecure": null,
+          "Width": 0
+        }
+      ],
+      "Metadata": "<CloudflareVideo><MediaId>7834844</MediaId></CloudflareVideo>",
+      "Omschrijving": "Amstelveenseweg 182-3 - Preview.mp4",
+      "RegistratieVerplicht": false,
+      "Soort": 5
+    },
+    {
+      "Categorie": 3,
+      "ContentType": 2,
+      "Id": "d980166a-20db-d99c-f6f6-7ff28435e3b6",
+      "IndexNumber": 0,
+      "MediaItems": [
+        {
+          "Category": 22,
+          "Height": 0,
+          "Url": "http://cloud.funda.nl/valentina_media/7834844.pdf",
+          "UrlSecure": "http://cloud.funda.nl/valentina_media/7834844.pdf",
+          "Width": 0
+        }
+      ],
+      "Metadata": null,
+      "Omschrijving": null,
+      "RegistratieVerplicht": false,
+      "Soort": 19
+    }
+  ],
+  "Media-Foto": [
+    "http://cloud.funda.nl/valentina_media/223/522/328_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/234/788/061_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/234/969/109_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/227/886/824_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/235/346/497_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/233/410/474_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/233/131/968_klein.jpg",
+    "http://cloud.funda.nl/valentina_media/233/785/557_klein.jpg"
+  ],
+  "MobileURL": "http://m.funda.nl/obj.aspx?goi=7834844",
+  "ObjectType": "woonhuis",
+  "ObjectTypeMetVoorvoegsel": "deze woning",
+  "OpenHuizen": [],
+  "PerceelOppervlakte": 130,
+  "PermanenteBewoning": "permanente bewoning is toegestaan",
+  "Plaats": "Amsterdam",
+  "Postcode": "1075MJ",
+  "Prijs": {
+    "GeenExtraKosten": false,
+    "HuurAbbreviation": "",
+    "Huurprijs": null,
+    "HuurprijsOpAanvraag": "",
+    "HuurprijsTot": null,
+    "KoopAbbreviation": "k.k.",
+    "Koopprijs": 4400000,
+    "KoopprijsOpAanvraag": "",
+    "KoopprijsTot": 4400000,
+    "OriginelePrijs": null,
+    "VeilingText": ""
+  },
+  "PrijsGeformatteerd": "<span class=\"price-wrapper\"><span class=\"price\">&euro;&nbsp;4.400.000</span> <abbr class=\"price-ext\">k.k.</abbr></span>",
+  "Project": null,
+  "ProjectNaam": null,
+  "PublicatieDatum": "/Date(1769036400000+0100)/",
+  "PublicatieStatus": 0,
+  "SchuurBerging": "vrijstaande stenen berging",
+  "SchuurBergingIsolatie": null,
+  "SchuurBergingVoorzieningen": "elektra",
+  "ScrambledId": "43289207",
+  "ServiceKosten": 0,
+  "SoortAanbod": 10,
+  "SoortDak": "schilddak bedekt met keramische dakpannen",
+  "SoortGarage": null,
+  "SoortParkeergelegenheid": "Betaald parkeren en parkeervergunningen",
+  "SoortPlaatsing": 0,
+  "SoortWoning": "herenhuis",
+  "Titels": [
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam",
+      "Pagina": 0
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Omschrijving",
+      "Pagina": 1
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Kenmerken",
+      "Pagina": 2
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Foto's",
+      "Pagina": 3
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Buurtinformatie",
+      "Pagina": 4
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Foto's",
+      "Pagina": 5
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Kaart",
+      "Pagina": 6
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Hypotheek",
+      "Pagina": 7
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Print",
+      "Pagina": 8
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - 360&deg; foto's",
+      "Pagina": 9
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Video",
+      "Pagina": 10
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Plattegrond",
+      "Pagina": 11
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Slideshow",
+      "Pagina": 12
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Reageer",
+      "Pagina": 13
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Bezichtiging",
+      "Pagina": 14
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Brochure",
+      "Pagina": 15
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Voorwaarden",
+      "Pagina": 16
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Openhuis",
+      "Pagina": 17
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Doorsturen",
+      "Pagina": 18
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Routeplanner",
+      "Pagina": 19
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Kadaster",
+      "Pagina": 20
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Overbruggingsgarantie",
+      "Pagina": 21
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - CarrouselBanner",
+      "Pagina": 22
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Carrousel",
+      "Pagina": 23
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - MeldEenFout",
+      "Pagina": 24
+    },
+    {
+      "Omschrijving": "Huis te koop: Amstelveenseweg 182-3 1075 MJ Amsterdam - Woningtypen",
+      "Pagina": 25
+    }
+  ],
+  "ToonBezichtigingMaken": true,
+  "ToonBrochureAanvraag": true,
+  "ToonMakelaarWoningaanbod": true,
+  "ToonReageren": true,
+  "TransactieAfmeldDatum": null,
+  "TransactieMakelaarId": null,
+  "TransactieMakelaarNaam": null,
+  "TuinLigging": "gelegen op het noordwesten",
+  "TypeProject": 0,
+  "URL": "http://www.funda.nl/koop/amsterdam/huis-43289207-amstelveenseweg-182-3/",
+  "Veiling": {
+    "EindDatum": null,
+    "Link": null,
+    "StartDatum": null,
+    "VeilingPartij": null
+  },
+  "VerkoopStatus": "Beschikbaar",
+  "Verwarming": "C.V.-ketel",
+  "Video": null,
+  "VolledigeOmschrijving": "Rustig en riant wonen in Amsterdam! Deze comfortabele woning aan de Amstelveenseweg 182-3 is nu te koop. Het huis (1930) is goed onderhouden en je kunt de woning zo betrekken. Je vindt hier een lichte woonkamer met open keuken, 5 fijne slaapkamers en eigentijds sanitair. Met 380 m2 woonoppervlakte is er ruimte voor het hele gezin.\n\nWe nemen je mee:\n•\tWoongenot: 380 m2\n•\tRuime, lichte living\n•\tOpen keuken met diverse inbouwapparatuur\n•\t5 slaapkamers\n•\tEnergielabel: E\n•\tGelegen in een rustige buurt met alle voorzieningen vlakbij\n\nKen je de omgeving al?\nDe woning is gelegen in een kindvriendelijke buurt, op loopafstand van winkels en scholen. Het openbaar vervoer en de uitvalswegen zijn goed bereikbaar.",
+  "Voorzieningen": "glasvezelkabel en mechanische ventilatie",
+  "WGS84_X": 4.865066,
+  "WGS84_Y": 52.350456,
+  "WarmWater": "C.V.-ketel",
+  "WoonOppervlakte": 380,
+  "EersteHuurPrijs": null,
+  "EersteHuurPrijsLang": null,
+  "EersteKoopPrijs": null,
+  "EersteKoopPrijsLang": null,
+  "HuurPrijs": null,
+  "HuurPrijsLang": null,
+  "HuurPrijsTot": null,
+  "Huurprijs": null,
+  "HuurprijsFormaat": null,
+  "KoopPrijs": 4400000,
+  "KoopPrijsLang": "<[KoopPrijs]> <{kosten koper|lang}>",
+  "Koopprijs": 4400000,
+  "KoopprijsFormaat": "<[KoopPrijs]> <{kosten koper|kort}>",
+  "KoopprijsTot": 4400000,
+  "ShortURL": "http://funda.nl/43289207",
+  "Tuin": "achtertuin",
+  "VeilingGeformatteerd": null,
+  "MakelaarTelefoon": "020-1805189"
+}
