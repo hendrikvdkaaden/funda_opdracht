@@ -40,7 +40,7 @@ lib/
 ```
 
 - **De domain-laag kent geen Flutter, HTTP of JSON.** Hij hangt alleen af van `equatable`.
-- **`main.dart` is de enige plek die de concrete implementaties kent.** De rest van de app hangt af van de `ListingRepository`-interface.
+- **`main.dart` is de enige plek die de concrete implementaties kent.** De rest van de app hangt af van de `ListingRepository`-interface. Dit sluit aan bij de aanpak uit Funda's blog [Scaling Flutter development: UI composition in a multi-team setup](https://blog.funda.nl/scaling-flutter-development-ui-composition-in-a-multi-team-setup/): een feature als eigen eenheid en dependency inversion via een composition root.
 
 ## Keuzes en afwegingen
 
