@@ -92,7 +92,7 @@ lib/
 
 Ik heb deze opdracht gemaakt met Claude (Anthropic), op twee manieren.
 
-**1. Als mentor en reviewer (chat).** Ik heb de eerste versies van de entity, de DTO, de data source, de repository, de bloc met events en states, de page en `main.dart` zelf geschreven. Claude reviewde ze en legde uit wat er mis was, bijvoorbeeld:
+**1. Als sparring partner en reviewer (chat).** Ik heb de eerste versies van de entity, de DTO, de data source, de repository, de bloc met events en states, de page en `main.dart` zelf geschreven. Claude reviewde ze en legde uit wat er mis was, bijvoorbeeld:
 - `fromJson` hoorde niet in de entity.
 - Mijn state-klasse `Error` botste met `dart:core`.
   
