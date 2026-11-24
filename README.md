@@ -4,7 +4,9 @@ Een kleine Flutter-app die de details van een woning ophaalt uit de Funda Aanbod
 
 ## Starten
 
-**Vereist:** Flutter 3.47.9 (Dart 3.13.7). De code gebruikt recente Dart-features (private named parameters, wildcard-variabelen), dus een oudere SDK compileert het project niet.
+**Vereist:** Flutter 3.50.1 (Dart 3.14.0). De code gebruikt recente Dart-features (private named parameters, wildcard-variabelen), dus een oudere SDK compileert het project niet.
+
+Voor Android gebruikt het project Gradle 9.5.0, Android Gradle Plugin 9.3.1 en Kotlin 2.4.20. Die hoef je niet zelf te installeren: de Gradle-wrapper haalt ze bij de eerste build op.
 
 1. Kopieer `config.example.json` naar `config.json` en vul de API-key in. `config.json` staat in `.gitignore`.
 2. Start de app:
@@ -19,6 +21,8 @@ Een kleine Flutter-app die de details van een woning ophaalt uit de Funda Aanbod
 
 Zonder key stopt de app direct met een duidelijke melding, in plaats van een onduidelijke 401.
 
+`flutter analyze` geeft infomeldingen dat `package:flutter/material.dart` verouderd is en vervangen wordt door `material_ui`. Die migratie is bewust nog niet gedaan: `flutter gen-l10n` genereert nog de oude Material-vertalingen, en met `material_ui` vindt de app dan geen Nederlandse Material-vertalingen meer.
+
 ## Architectuur
 
 De feature is opgezet als zelfstandige module met Clean Architecture-lagen:
@@ -26,7 +30,7 @@ De feature is opgezet als zelfstandige module met Clean Architecture-lagen:
 ```
 lib/
   core/app_config.dart         → API-key en base-URL via --dart-define
-  core/app_theme.dart          → licht en donker thema (kleuren uit het design)
+  core/app_theme.dart          → licht en donker thema (donker uit het design, licht afgeleid van Funda-oranje)
   l10n/                        → vertalingen (ARB, Nederlands en Engels)
   features/listing_detail/
     domain/                    → Listing-entity, repository-interface, failures
@@ -68,6 +72,7 @@ lib/
 
 **UI**
 - De kaart staat niet-interactief in de scrollende lijst, om gesture-conflicten te voorkomen. Tikken opent de locatie extern: in Apple Maps op iOS, en in Google Maps op andere platformen.
+- Een vaste balk onderin toont de prijs en de belknop, zodat bellen vanaf elke plek op de pagina kan. De makelaarskaart toont daarom alleen het telefoonnummer.
 - Localisatie via ARB vanaf het begin, met een Nederlandse en een Engelse vertaling.
 - **Toegankelijkheid:**
   - Foto's hebben een label "Foto X van N" en de visuele teller is uitgesloten met `ExcludeSemantics`.
